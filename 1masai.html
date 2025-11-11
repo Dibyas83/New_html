@@ -27,7 +27,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">   <!-- link to external CSS file for styling the document -->
     <title>IIT MANDI Class1</title>       <!-- title of the document shown in the browser tab -->
     <style>
-        h1 {
+        h1:hover {
+            color: rgb(209, 22, 63);
+            text-align: center;
+        }
+        h1{
             color: rgb(209, 44, 22);
             text-align: center;
         } 
@@ -44,17 +48,42 @@
             text-align: center;
         }
         #myp{color: rgb(17, 199, 47);
-             background-color: yellow;
+             background-color: rgba(255, 255, 0, 0.719);
             text-align: center;
         }
-        .highlight {
-            background-color: yellow;
+        a[href]          
+         {
+            text-decoration: none;
+            background-color: rgb(187, 255, 0);
+            color: rgb(32, 0, 121); 
+            border: 1px solid rgba(4, 0, 255, 0.897);
             padding: 5px;
+        }
+        a[href="https://www.google.com"]          
+         {
+            text-decoration: none;
+            background-color: rgb(72, 255, 0);
+            color: rgb(32, 0, 121); 
+            border: 1px solid rgba(4, 0, 255, 0.897);
+            padding: 5px;
+        }
+        .parentDiv {
+            border: 2px solid black;
+            height: 3rem;
+            margin-top: 1rem;
+            background-color: rgba(211, 211, 211, 0.945);
+        }
+        .childDiv {
+            border: 2px solid black;
+            height: 1rem;
+            margin: 5px;
+            background-color: rgb(12, 55, 71);
         }
     </style>
 
 </head>
 <body>
+    <div class="parentDiv"><div class="childtDiv"></div></div>
     <!-- Text element  header are block level - takes entire line-->
     <h1  style= "border: 1px solid rgba(255, 230, 0, 0.897);"><strong>Welcome to IITMANDI</strong></h1> 
     <h1 class="myh1" style= "border: 1px solid rgba(255, 230, 0, 0.897);"><strong>Welcome to IITMANDI</strong></h1>   <!-- main heading of the document with an id attribute for styling or scripting -->
@@ -62,7 +91,7 @@
     <h3 class="myh3" style= "border: 1px solid rgba(255, 230, 0, 0.897);"><strong>Welcome to IITMANDI</strong></h3>
     <h4 class="myh4" style= "border: 1px solid rgba(255, 230, 0, 0.897);"><strong>Welcome to IITMANDI</strong></h4>
     
-    <p id="myp"  style="color: rgb(32, 0, 121); border: 1px solid rgba(255, 230, 0, 0.897);">This is my first webpage created using HTML.</p> <!-- block level.paragraph element with an unique id attribute for styling or scripting -->
+    <p id="myp"  style="color: rgb(32, 0, 121); border: 2px solid rgba(2, 3, 66, 0.068);">This is my first webpage created using HTML.</p> <!-- block level.paragraph element with an unique id attribute for styling or scripting -->
     <!-- 1 id every file or page -->
     <p>Paragraph text</p>
     <div style="color: rgb(32, 0, 121); border: 1px solid rgba(255, 230, 0, 0.897);">  <!-- division element block level(height and width can be specified)to group inline text elements -->
@@ -78,7 +107,7 @@
     </div>
     <br/> 
     <h2 id="myh2" style="color: rgb(32, 0, 121); border: 1px solid rgba(255, 230, 0, 0.897);">Welcome to IITMANDI</h2>   <!-- subheading of the document with a different id attribute -->
-    <p id="myp1" style="color: rgb(32, 0, 121); border: 1px solid rgba(255, 230, 0, 0.897);">This is my first webpage created using HTML.</p>
+    <p id="myp1" style="color: rgb(32, 0, 121); border: 2px solid rgba(0, 255, 55, 0.041);">This is my first webpage created using HTML.</p>
     <strong style="color: rgb(32, 0, 121); border: 1px solid rgba(255, 230, 0, 0.897);">This text is important and bold.</strong>  <!-- semantic element for strong importance by browser to refer -->
     <em>This text is italicized.</em>   <!-- semantic element for emphasis by browser to refer -->
     <br>  <!-- line break element to create a new line. self closing tag -->
