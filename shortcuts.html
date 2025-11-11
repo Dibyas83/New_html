@@ -1,0 +1,189 @@
+
+<!--In VS Code, you can use shortcuts like Shift + 1 + Enter to automatically populate the HTML Doctype, or type ! [2]+ Enter to generate a default HTML template. For formatting, use Ctrl + Shift + I to format the entire file or Ctrl + K Ctrl + F to format only the selected text. To trigger suggestions, press Ctrl + Space. You can also use Emmet extensions to quickly write HTML structures. 
+Here's a more detailed breakdown of some key shortcuts:
+HTML Template Shortcuts:
+Shift + 1 + Enter: This shortcut automatically generates the HTML Doctype declaration. 
+! + Enter: Typing `! ` followed by pressing Enter will automatically generate a basic HTML template. 
+html (with html:5 in Emmet) + Enter: This shortcut will insert the basic HTML 5 structure with <!DOCTYPE html>, <html lang="en">, <head>, and <body> tags. 
+Formatting Shortcuts:
+Ctrl + Shift + I: Formats the entire document.
+Ctrl + K Ctrl + F: Formats the selected text.
+Ctrl + Space: Triggers code suggestions. 
+General Shortcuts:
+Ctrl + A (Windows) / Cmd + A (macOS): Selects all text in the editor. 
+Ctrl + C (Windows) / Cmd + C (macOS): Copies the selected text. 
+Ctrl + X (Windows) / Cmd + X (macOS): Cuts the selected text. 
+Ctrl + V (Windows) / Cmd + V (macOS): Pastes the clipboard content. 
+Ctrl + F (Windows) / Cmd + F (macOS): Opens the Find dialog to search the editor's content. 
+Alt + Up/Down: Moves the current line up or down. 
+Shift + Alt + Up/Down: Copies the current line up or down. 
+Ctrl + Shift + K: Deletes the current line. 
+Ctrl + Enter: Inserts a new line below the current one. 
+Ctrl + Shift + Enter: Inserts a new line above the current one. 
+`Ctrl + Shift + \`: Jumps to the matching bracket. 
+`Ctrl + ] / [ `: Indents/outdents the selected text. 
+Ctrl + D: Adds a match of the selected word in the editor. 
+Ctrl + Shift + L: Selects all occurrences of the current word. 
+Emmet Shortcuts:
+div > .class + Tab: Creates a <div> element with the specified class. 
+div.bold + Tab: Creates a <div> element with the class "bold". 
+li*3 + Tab: Creates three <li> elements. 
+ul > li + Tab: Creates a <ul> with a <li> inside. 
+^ (Climb-up): Moves up the tree structure to a parent element. 
+* (Multiplication): Duplicates elements. 
+Other Useful Tips:
+Ctrl + click: Opens a file or image from a link.
+Ctrl + Shift + I: Formats the document.
+Ctrl + Shift + P: Opens the Command Palette.-->
+
+
+<!--1 button.add-button for class 
+buttonadd-button for class
+button#add-button for id
+ul>li   
+<ul>
+    <li></li>
+</ul>
+------------
+li+li
+<li></li>
+<li></li>
+----------
+nav>ul>li+li
+<nav>
+    <ul>
+        <li></li>
+        <li></li>
+    </ul>
+</nav>
+----------------
+nav>ul>li^button
+<nav>
+    <ul>
+        <li></li>
+    </ul>
+    <button></button>
+</nav>
+---------------
+.container
+<div class="container"></div>
+#container
+<div id="container"></div>
+--------------
+nav>ul>li*10
+<nav>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</nav>
+--------------
+nav>ul>li.item*10
+<nav>
+    <ul>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+    </ul>
+</nav>
+--------------
+ul>li*10
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+----------------
+(ul>li)*10
+<ul>
+    <li></li>
+</ul>
+<ul>
+    <li></li>
+</ul>
+<ul>
+    <li></li>
+</ul>
+<ul>
+    <li></li>
+</ul>
+<ul>
+    <li></li>
+</ul>
+<ul>
+    <li></li>
+</ul>
+<ul>
+    <li></li>
+</ul>
+<ul>
+    <li></li>
+</ul>
+<ul>
+    <li></li>
+</ul>
+<ul>
+    <li></li>
+</ul>
+----------------
+nav>ul>li.item$*10
+<nav>
+    <ul>
+        <li class="item1"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+        <li class="item4"></li>
+        <li class="item5"></li>
+        <li class="item6"></li>
+        <li class="item7"></li>
+        <li class="item8"></li>
+        <li class="item9"></li>
+        <li class="item10"></li>
+    </ul>
+</nav>
+-------------------
+li[style="transition-delay:$s"]*10
+<li style="transition-delay:1s"></li>
+<li style="transition-delay:2s"></li>
+<li style="transition-delay:3s"></li>
+<li style="transition-delay:4s"></li>
+<li style="transition-delay:5s"></li>
+<li style="transition-delay:6s"></li>
+<li style="transition-delay:7s"></li>
+<li style="transition-delay:8s"></li>
+<li style="transition-delay:9s"></li>
+<li style="transition-delay:10s"></li>
+--------------
+lorem50  tab
+
+
+-->
+
+
+
+
+
+
+

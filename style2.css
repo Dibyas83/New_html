@@ -1,0 +1,25 @@
+
+body{
+    background-color: rgb(255, 0, 128);
+}
+h1{
+    color: tomato;
+}
+.odd{
+    color: rgb(0, 255, 247);
+}
+.even{
+    color: #93ff59;
+}
+.odd{
+    color: hsl(236, 56%, 67%);
+}
+
+
+
+
+
+
+
+
+
