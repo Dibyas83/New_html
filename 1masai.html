@@ -1,0 +1,422 @@
+
+<!--browser compiler understands html--> 
+<!-- Ctrl + / for comments -->
+ <!-- ! boiler plate -->
+<!--  boiler plate
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+   
+  </body>
+  </html>
+   -->
+
+<!DOCTYPE html>  <!-- declaration to define this document as an HTML5 document -->
+<html lang="en">   <!-- lang attribute specifies the language of the document -->
+<head>             <!-- infos of the web page ,title ,size are called mete data-->
+    <meta charset="UTF-8">   <!-- encoder.character encoding for the document.browser understands this encoded version of o & 1-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- viewport settings - mobile view , responsive design(change view size) for all devices ,initally 100% or 1-->
+    <meta name="description" content="Take a look at my website">  <!-- description of the document for search engines  that willbe visible in tag when hovered-->
+    <meta name="keywords" content="HTML, CSS, JavaScript">  <!-- keywords for search engines -->
+    <meta name="author" content=" D J ">  <!-- author of the document -->
+    <link rel="stylesheet" type="text/css" href="style.css">   <!-- link to external CSS file for styling the document -->
+    <title>IIT MANDI Class1</title>       <!-- title of the document shown in the browser tab -->
+    <style>
+        h1 {
+            color: rgb(209, 44, 22);
+            text-align: center;
+        } 
+        .myh1{color: rgb(0, 128, 53);
+            text-align: center;
+        }
+        .myh2{color: rgb(13, 0, 128);
+            text-align: center;
+        }
+        .myh3{color: rgb(234, 238, 27);
+            text-align: center;
+        }
+        .myh4{color: rgb(199, 17, 129);
+            text-align: center;
+        }
+        #myp{color: rgb(17, 199, 47);
+             background-color: yellow;
+            text-align: center;
+        }
+        .highlight {
+            background-color: yellow;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Text element  header are block level - takes entire line-->
+    <h1  style= "border: 1px solid rgba(255, 230, 0, 0.897);"><strong>Welcome to IITMANDI</strong></h1> 
+    <h1 class="myh1" style= "border: 1px solid rgba(255, 230, 0, 0.897);"><strong>Welcome to IITMANDI</strong></h1>   <!-- main heading of the document with an id attribute for styling or scripting -->
+    <h1 class="myh2" style= "border: 1px solid rgba(255, 230, 0, 0.897);"><strong>Welcome to IITMANDI</strong></h1>
+    <h3 class="myh3" style= "border: 1px solid rgba(255, 230, 0, 0.897);"><strong>Welcome to IITMANDI</strong></h3>
+    <h4 class="myh4" style= "border: 1px solid rgba(255, 230, 0, 0.897);"><strong>Welcome to IITMANDI</strong></h4>
+    
+    <p id="myp"  style="color: rgb(32, 0, 121); border: 1px solid rgba(255, 230, 0, 0.897);">This is my first webpage created using HTML.</p> <!-- block level.paragraph element with an unique id attribute for styling or scripting -->
+    <!-- 1 id every file or page -->
+    <p>Paragraph text</p>
+    <div style="color: rgb(32, 0, 121); border: 1px solid rgba(255, 230, 0, 0.897);">  <!-- division element block level(height and width can be specified)to group inline text elements -->
+    <strong>Important text (bold)</strong> <!-- enhancer or supporting ele for text. bold text using strong semantic element -->
+    <em style="color: rgb(32, 0, 121); border: 1px solid rgba(255, 230, 0, 0.897);">Emphasized text (italic)</em>   <!-- inline.italicized text using em semantic element -->
+    <mark>Highlighted text</mark>    <!-- inline element to highlight text -->
+    <u>Underlined text</u>   <!-- inline. underlined text using u element -->
+    <small>Smaller text</small>  <!-- inline. smaller text using small element -->
+    <del style="color: rgb(32, 0, 121); border: 1px solid rgba(255, 230, 0, 0.897);">Deleted text (strikethrough)</del>   <!-- inline. deleted ele as strikethrough text using del element -->
+    <ins>Inserted text (underlined)</ins>   <!-- inline. inserted text as underlined text using ins element -->
+    <sub>Subscript: H<sub>2</sub>O</sub>   <!-- inline. subscript text using sub element -->
+    <sup>Superscript: x<sup>2</sup></sup>   <!-- inline. superscript text using sup element -->
+    </div>
+    <br/> 
+    <h2 id="myh2" style="color: rgb(32, 0, 121); border: 1px solid rgba(255, 230, 0, 0.897);">Welcome to IITMANDI</h2>   <!-- subheading of the document with a different id attribute -->
+    <p id="myp1" style="color: rgb(32, 0, 121); border: 1px solid rgba(255, 230, 0, 0.897);">This is my first webpage created using HTML.</p>
+    <strong style="color: rgb(32, 0, 121); border: 1px solid rgba(255, 230, 0, 0.897);">This text is important and bold.</strong>  <!-- semantic element for strong importance by browser to refer -->
+    <em>This text is italicized.</em>   <!-- semantic element for emphasis by browser to refer -->
+    <br>  <!-- line break element to create a new line. self closing tag -->
+    <div style="color: aqua; border: 5px dashed rgba(255, 123, 0, 0.897); height: 44px">
+        <div style="color: aqua; border: 3px solid rgba(43, 255, 0, 0.897); height: 40px"></div>
+    </div>
+    
+    <ol style="color: aqua; border: 1px solid rgba(255, 230, 0, 0.897);">   <!-- ordered list element to create a numbered list -->
+        <li>Current Month</li>   <!-- list item element -->
+            <ol>   <!-- nested ordered list element -->
+                <li>Week 1</li>   <!-- nested list item element -->
+                <li>Week 2</li>
+                <li>Week 3</li>
+                <li>Week 4</li>
+            </ol>
+        <li>Current date</li>
+            <ol> 
+                <li>10</li>   <!-- nested list item element -->
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+
+            </ol>  <!-- nested ordered list element -->
+               
+        <li>Current hr</li>
+            <ul> 
+                <li>1</li>   <!-- nested list item element -->
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>              
+            </ul> 
+    </ol>
+    <ul style="color: aqua; border: 1px solid rgba(255, 230, 0, 0.897);">   <!-- ordered list element to create a numbered list -->
+        <li>Current Month</li>   <!-- list item element -->
+            <ol>   <!-- nested ordered list element -->
+                <li>Week 1</li>   <!-- nested list item element -->
+                <li>Week 2</li>
+                <li>Week 3</li>
+                <li>Week 4</li>
+            </ol>
+        <li>Current date</li>
+            <ol> 
+                <li>10</li>   <!-- nested list item element -->
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+
+            </ol>  <!-- nested ordered list element --> 
+    </ul> 
+    <hr>
+    <dt>HTML</dt>  <!-- Definition term element to define a term in a definition list -->
+    <dd>HyperText Markup Language</dd> <!-- Definition description element to provide the definition of the term -->
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+
+    <dl>  <!-- Definition list element to create a list of terms and definitions -->
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+    </dl>
+    <hr>
+
+    <!-- External website -->
+    <a href="https://www.google.com">Visit Google</a>  <!-- anchor tag to create a hyperlink to an external website,href is the attribue holding the URL link -->
+
+    <!-- Another page on same site -->
+    <a href="about.html">About Page</a>
+
+    <!-- Email link -->
+    <a href="mailto:contact@example.com">Send Email</a>
+
+    <!-- Phone link -->
+    <a href="tel:+1234567890">Call Us</a>
+
+    <!-- Link to section on same page -->
+    <a href="#section1">Jump to Section</a>
+
+    <!-- Download file -->
+    <a href="resume.pdf" download>Download Resume</a>
+
+    <!-- Open in new tab -->
+    <a href="https://example.com" target="_blank">New Tab</a>
+
+    <hr>
+    <!-- Basic image -->
+    <img src="/pics/bro.jpg" alt="Description for accessibility" width="800" height="800">
+    <hr>
+    <!-- Image with dimensions -->
+    <img src="/pics/pexels-pixabay-355952.jpg" alt="Website banner" width="800" height="400">
+    <hr>
+    <!-- Responsive image -->
+    <img src="/pics/portrait-man-cartoon-style.jpg" alt="Company logo" style="max-width: 100%;">
+    <img src="/pics/bro.jpg" alt="Description for accessibility" 
+    style="max-width: 100%">
+    <hr>
+    <!-- Audio -->
+    <audio controls>
+        <source src="/music/file_example_MP3_2MG.mp3" type="audio/mpeg">
+        Your browser doesn't support audio.
+    </audio>
+    <hr>
+    <!-- Video -->
+    <video controls width="500">
+        <source src="/music/file_example_MP4_640_3MG.mp4" type="video/mp4">
+        Your browser doesn't support video.
+    </video>
+    <hr>
+    <form action="/submit-url" method="POST">  <!-- Form submission URL and method -->  
+    <!-- Form elements here -->
+    <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <!-- Text field -->
+    <label for="name">Name:</label>  <!-- label for accessibility -->   
+    <input type="text" id="name" name="name" required>
+
+    <!-- Email field (with validation) -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <!-- Password field -->
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="password" minlength="8" required>
+
+    <!-- Multi-line text -->
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+
+    <hr>
+        <!-- Radio buttons (single choice) -->
+    <fieldset>
+        <legend>Gender:</legend>  <!-- group related elements with a caption -->
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </fieldset>
+
+    <!-- Checkboxes (multiple choices) -->
+    <fieldset>
+        <legend>Skills:</legend>  <!-- group related elements with a caption -->
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="html">HTML</label>
+        
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="css">CSS</label>
+    </fieldset>
+
+    <!-- Dropdown menu -->
+    <label for="country">Country:</label>  <!-- label for accessibility -->
+    <select id="country" name="country">  <!-- select element for dropdown menu --> 
+        <option value="">Select Country</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+    </select>
+
+    <hr>
+    <!-- Number input -->
+    <input type="number" name="age" min="18" max="100" step="1">  <!-- input field for numeric values with min, max, and step attributes -->    
+
+    <!-- Date picker -->
+    <input type="date" name="birthdate">  <!-- input field for selecting a date --> 
+
+    <!-- File upload -->
+    <input type="file" name="resume" accept=".pdf,.doc">
+
+    <!-- Range slider -->
+    <input type="range" name="rating" min="1" max="10" value="5">
+
+    <!-- Color picker -->
+    <input type="color" name="theme-color">
+
+    <!-- Search box -->
+    <input type="search" name="query" placeholder="Search...">
+
+    <hr>
+    <form action="/register" method="POST">
+    <fieldset>  <!-- group related form elements -->
+        <legend>User Registration</legend>
+        
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+        
+        <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" id="m" name="gender" value="male">
+            <label for="m">Male</label>
+            <input type="radio" id="f" name="gender" value="female">
+            <label for="f">Female</label>
+        </fieldset>
+        
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio" rows="3"></textarea>
+        
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to terms</label>
+        
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear Form">
+    </fieldset>
+    </form>  
+
+    <hr>
+    <table>
+    <thead>  <!-- table header -->
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tbody>  <!-- table body -->
+        <tr>
+            <td>John Doe</td>  <!-- table data cell -->
+            <td>25</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>30</td>
+            <td>California</td>
+        </tr>
+    </tbody>
+</table>
+
+
+    <hr>
+    <table>
+    <caption>Student Grades</caption>  <!-- table caption -->
+    <thead>
+        <tr>
+            <th>Subject</th>
+            <th>Grade</th>
+            <th>Credits</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Math</td>
+            <td>A</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>B+</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total</td>
+            <td>-</td>
+            <td>7</td>
+        </tr>
+    </tfoot>
+    </table>
+
+
+    <hr>
+    <table>
+    <tr>
+        <th rowspan="2">Student</th>
+        <th colspan="2">Scores</th>
+    </tr>
+    <tr>
+        <th>Math</th>
+        <th>Science</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>85</td>
+        <td>92</td>
+    </tr>
+    
+    </table>
+
+
+    <header>
+    <nav>  <!-- navigation section -->
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+
+<main>
+    <article>  <!-- main content of the document -->
+        <header>
+            <h1>Article Title</h1>
+            <time datetime="2024-01-15">January 15, 2024</time>
+        </header>
+        
+        <section>
+            <h2>Introduction</h2>
+            <p>Article content...</p>
+        </section>
+    </article>
+    
+    <aside>  <!-- sidebar content -->   
+        <h3>Related Links</h3>  <!-- heading for related links section -->
+        <ul>
+            <li><a href="/related">Related Article</a></li>  <!-- list item with link to related article -->
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Website</p>
+</footer>
+
+
+
+</body>
+
+
+
+
+  
+<br>     <!-- Line break -->
+<hr>     <!-- Horizontal line -->
+&nbsp;   <!-- Non-breaking space -->
+&lt;     <!-- Less than < -->
+&gt;     <!-- Greater than > -->
+&amp;    <!-- Ampersand & -->
+&copy;   <!-- Copyright © -->
+
+
+
